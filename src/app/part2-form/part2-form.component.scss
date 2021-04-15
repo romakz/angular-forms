@@ -1,0 +1,49 @@
+.body {
+  max-width: 800px;
+}
+
+.form-box {
+  border: 1px solid #1976d2;
+  padding: 5px;
+  border-radius: 5px;
+
+  div {
+    border-radius: 5px;
+    border: 1px solid #1976d2;
+    padding: 5px;
+    margin: 5px;
+  }
+}
+
+input {
+  margin-top: 10px;
+  display: block;
+}
+
+span {
+  font-weight: bold;
+}
+
+.div-react {
+  font-weight: bold;
+  border: none!important;
+}
+
+.div-isolated {
+  font-weight: bold;
+  border: none!important;
+  color: #0d97e0;
+}
+
+.toggle-btn {
+  margin-left: 20px;
+  background: #0662a0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 1px 30px;
+}
+
+.valid {
+  color: red!important;
+}

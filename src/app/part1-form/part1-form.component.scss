@@ -1,0 +1,41 @@
+.form-box {
+  display: inline-block;
+  border-radius: 5px;
+  border: 1px solid #0662a0;
+}
+
+.form-title {
+  padding: 10px;
+  background: #0662a0;
+  color: #fff;
+}
+
+.form-body {
+  padding: 10px 120px 10px 40px;
+}
+
+label {
+  display: inline-block;
+  min-width: 100px;
+  font-weight: bold;
+}
+
+input {
+  width: 400px;
+  margin-bottom: 20px;
+  padding: 3px;
+}
+
+button {
+  margin-left: 100px;
+  padding: 7px 10px;
+  background: #0662a0;
+  color: #fff;
+  border-radius: 3px;
+  border: none;
+}
+
+.btn-disabled {
+  background: #5392be;
+  color: #e7e4e4;
+}

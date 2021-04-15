@@ -1,0 +1,64 @@
+<div class="body">
+
+  <div class="form-box">
+
+    <form #mainForm="ngForm" (ngSubmit)="submit()">
+      <p>form-1 validity is: <span [style.color]="'green'" [ngClass]="{'valid': !mainForm.valid}" >{{mainForm.valid}}</span></p>
+      <div ngModelGroup="form2">
+        <p>
+          <label for="form2Line">form-2 validity is: <span [style.color]="'green'" [ngClass]="{'valid': !mainForm.valid}">{{mainForm.valid}}</span></label>
+          <input type="text" id="form2Line" name="form2Line" [(ngModel)]="form1.form2.form2Line" required>
+        </p>
+
+        <div ngModelGroup="form21">
+          <p>
+            <label for="form21Line">form-2.1 validity is: <span [style.color]="'green'" [ngClass]="{'valid': !mainForm.valid}">{{mainForm.valid}}</span></label>
+            <input type="text" id="form21Line" name="form21Line" [(ngModel)]="form1.form2.form21.form21Line" required>
+          </p>
+        </div>
+
+        <div ngModelGroup="form22">
+          <p>
+            <label for="form22Line">form-2.2 validity is: <span [style.color]="'green'" [ngClass]="{'valid': !mainForm.valid}">{{mainForm.valid}}</span></label>
+            <input type="text" id="form22Line" name="form22Line" [(ngModel)]="form1.form2.form22.form22ine" required>
+          </p>
+        </div>
+
+        <button class="toggle-btn">Toggle reactive form</button>
+
+        <div ngModelGroup="form3">
+          <div class="div-react">Reactive form</div>
+          <p>
+            <label for="form3Line">form-3 validity is: <span [style.color]="'green'" [ngClass]="{'valid': !mainForm.valid}">{{mainForm.valid}}</span></label>
+            <input type="text" id="form3Line" name="form3Line" [(ngModel)]="form1.form3.form3Line" required>
+          </p>
+
+          <div ngModelGroup="form31">
+            <p>
+              <label for="form31Line">form-3.1 validity is: <span [style.color]="'green'" [ngClass]="{'valid': !mainForm.valid}">{{mainForm.valid}}</span></label>
+              <input type="text" id="form31Line" name="form31Line" [(ngModel)]="form1.form3.form31.form31Line" required>
+            </p>
+          </div>
+        </div>
+
+        <div ngModelGroup="form4">
+          <div class="div-isolated">Isolated form</div>
+          <p>
+            <label for="form4Line">form-4 validity is: <span [style.color]="'green'" [ngClass]="{'valid': !mainForm.valid}">{{mainForm.valid}}</span></label>
+            <input type="text" id="form4Line" name="form4Line" [(ngModel)]="form1.form4.form4Line" required>
+          </p>
+
+          <div ngModelGroup="form41">
+            <p>
+              <label for="form41Line">form-4.1 validity is: <span [style.color]="'green'" [ngClass]="{'valid': !mainForm.valid}">{{mainForm.valid}}</span></label>
+              <input type="text" id="form41Line" name="form41Line" [(ngModel)]="form1.form4.form41.form41Line" required>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </form>
+
+  </div>
+
+</div>

@@ -1,0 +1,35 @@
+<div class="wrapper">
+
+  <div class="form-box">
+
+    <div class="form-title">Sign Up Form</div>
+
+    <div class="form-body">
+      <form [formGroup]="varForm" (ngSubmit)="submit()">
+        <div>
+          <label for="firstname">First Name* </label>
+          <input id="firstname" type="text" formControlName="firstName" required>
+        </div>
+
+        <div>
+          <label for="lastname">Last Name*</label>
+          <input id="lastname" type="text" formControlName="lastName" required>
+        </div>
+
+        <div>
+          <label for="email">Email*</label>
+          <input id="email" type="email" formControlName="email" required>
+        </div>
+
+        <div>
+          <label for="password">Password*</label>
+          <input id="password" type="password" formControlName="password" required>
+        </div>
+
+        <button type="submit" [disabled]="varForm.invalid" [ngClass]="{'btn-disabled': varForm.invalid}">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+</div>
